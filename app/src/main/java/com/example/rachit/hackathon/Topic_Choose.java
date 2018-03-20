@@ -52,6 +52,9 @@ public class Topic_Choose extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_topic__choose);
         Profile =  findViewById(R.id.Profile);
+        t1=findViewById(R.id.t1);
+        t2=findViewById(R.id.t2);
+        t3=findViewById(R.id.t3);
         keyword_list = new ArrayList<>();
         topic = findViewById(R.id.topic);
         listview_keyword = findViewById(R.id.keyword);
@@ -140,16 +143,21 @@ public class Topic_Choose extends AppCompatActivity implements View.OnClickListe
                     String[] words= speech.split("\\s+");
 
                      for (int i = 0;i<items.length;i++)
-                     {String[] it = items[i].split("_");
+                     {   int y=0;
+                         String[] it = items[i].split("_");
                         for (int j=0;j<it.length;j++)
                         {
                             for(int k=0;k<words.length;k++) {
-                               String word = words[k];
-                                if (items[i] == words[j]) {
-
+                               String word = words[k].substring(0,1)+words[k].substring(1);
+                                if (it[j] == word ){
+                                 y=y+1;
 
                                 }
                             }
+                        }
+                        if(y==it.length)
+                        {
+                            t1.setVisibility(View.VISIBLE);
                         }
 
                      }
