@@ -11,19 +11,17 @@
         android:id="@+id/Profile"
         android:layout_width="226dp"
         android:layout_height="32dp"
-        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/name"
         android:gravity="center"
         android:textColor="#FF0000"
         android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.14" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/LogOut"
@@ -44,19 +42,98 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
+    <ListView
+        android:id="@+id/keyword"
+        android:layout_width="166dp"
+        android:layout_height="210dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topic"
+        app:layout_constraintVertical_bias="0.218"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="8dp" />
+
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/topic"
         android:layout_width="211dp"
         android:layout_height="56dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:entries="@array/Topic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.152"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Profile" />
+
+    <ImageButton
+        android:id="@+id/btnspeak"
+        android:layout_width="151dp"
+        android:layout_height="65dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:entries="@array/Topic"
+        android:layout_marginTop="8dp"
+        android:onClick="speech"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Profile"
-        app:layout_constraintVertical_bias="0.052" />
+        app:layout_constraintTop_toBottomOf="@+id/keyword"
+        app:srcCompat="@android:drawable/ic_btn_speak_now"
+        />
+
+    <ImageButton
+        android:id="@+id/t1"
+        android:layout_width="67dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/keyword"
+        app:layout_constraintTop_toBottomOf="@+id/LogOut"
+        app:layout_constraintVertical_bias="0.259"
+        app:srcCompat="@drawable/common_full_open_on_phone" />
+
+    <ImageButton
+        android:id="@+id/t2"
+        android:layout_width="67dp"
+        android:layout_height="49dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.554"
+        app:layout_constraintStart_toEndOf="@+id/keyword"
+        app:layout_constraintTop_toBottomOf="@+id/t1"
+        app:srcCompat="@drawable/common_full_open_on_phone" />
+
+    <ImageButton
+        android:id="@+id/t3"
+        android:layout_width="67dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.554"
+        app:layout_constraintStart_toEndOf="@+id/keyword"
+        app:layout_constraintTop_toBottomOf="@+id/t2"
+        app:layout_constraintVertical_bias="0.101"
+        app:srcCompat="@drawable/common_full_open_on_phone" />
 
 </android.support.constraint.ConstraintLayout>

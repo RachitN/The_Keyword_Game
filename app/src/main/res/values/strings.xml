@@ -11,8 +11,27 @@
     <string name="Reset">Send Reset Mail</string>
     <string name="Mob">Mobile No</string>
     <array name="Topic">
-    <item>Cloud Computing</item>
-    <item>Backup and Data Recovery</item>
-    <item>Software Methodologies</item>
+        <item>Select A Topic</item>
+        <item>Cloud_Computing</item>
+        <item>Air_and_Water_Polution</item>
     </array>
+    <array name="Air_and_Water_Polution">
+        <item>Air_Polution</item>
+        <item>Water_Polution</item>
+        <item>Soil_Polution</item>
+    </array>
+    <array name="Air_Polution">
+        <item>Smoke</item>
+        <item>Atmosphere</item>
+        <item>Contaminated</item>
+        <item>Harmful</item>
+        <item>Taj_Mahal</item>
+    </array>
+    <array name="Water_Polution">
+
+</array>
+    <array name="Soil_Polution">
+
+    </array>
+
 </resources>
