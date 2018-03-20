@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             {
                 final String user_name = user.getDisplayName();
-                Intent i = new Intent(getApplicationContext(), Profile.class);
+                Intent i = new Intent(getApplicationContext(), Topic_Choose.class);
                 i.putExtra("Name", user_name);
                 startActivity(i);
                 finish();
@@ -103,7 +103,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                     {
                         String user_name = user.getDisplayName();
-                        Intent i = new Intent(getApplicationContext(), Profile.class);
+                        Intent i = new Intent(getApplicationContext(), Topic_Choose.class);
                         i.putExtra("Name", user_name);
                         startActivity(i);                            //to open profile page
                         finish();

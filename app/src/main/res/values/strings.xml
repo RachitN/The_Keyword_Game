@@ -10,10 +10,9 @@
     <string name="Forgot">Forget Password</string>
     <string name="Reset">Send Reset Mail</string>
     <string name="Mob">Mobile No</string>
-    <array name="gender">
-        <item>Male</item>
-        <item>Female</item>
+    <array name="Topic">
+    <item>Cloud Computing</item>
+    <item>Backup and Data Recovery</item>
+    <item>Software Methodologies</item>
     </array>
-    <string name="update">Update Info</string>
-    <string name="verify">Enter Verification Code</string>
 </resources>
